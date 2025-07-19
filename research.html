@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Research - ZERAH</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&family=Bakbak+One&family=Changa+One&family=Lunasima:wght@400;700&family=Carrois+Gothic&display=swap" rel="stylesheet">
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+</head>
+<body>
+  <div class="content-wrapper">
+    <!-- 헤더 -->
+    <div class="header">
+      <div class="nav-button left" onclick="location.href='index.html'">Home</div>
+      <div class="nav-button right">Menu</div>
+      <h1>ZERAH</h1>
+      <p>Crafting magical, living worlds beyond reality.</p>
+    </div>
+
+    <!-- 메뉴 오버레이 -->
+    <div class="menu-overlay">
+      <div class="menu-container">
+        <div class="menu-back-button">Back</div>
+        <h2 class="menu-title">MENU</h2>
+        <nav class="menu-links">
+          <a href="about.html">About</a>
+          <a href="research.html">Research</a>
+          <a href="projects.html">Projects</a>
+          <a href="activities.html">Activities</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </div>
+
+    <script>
+      const menuBtn = document.querySelector('.nav-button.right');
+      const backBtn = document.querySelector('.menu-back-button');
+      const menuOverlay = document.querySelector('.menu-overlay');
+
+      menuBtn.addEventListener('click', () => {
+        menuOverlay.classList.add('active');
+      });
+
+      backBtn.addEventListener('click', () => {
+        menuOverlay.classList.remove('active');
+      });
+    </script>
+
+  <section class="content-section">
+    <div style="display: flex; justify-content: space-between; align-items: center;">
+      <div class="section-title">Research</div>
+    </div>
+    <div class="section-line"></div>
+  
+
+    <a href="in/research1.html" class="research-block-link">
+      <div class="research-block">
+        <div class="research-title-bar">Title</div>
+        <img src="images/research1.png" alt="Research 1" class="research-img" />
+      </div>
+    </a>
+
+    <a href="in/research2.html" class="research-block-link">
+      <div class="research-block">
+        <div class="research-title-bar">Title</div>
+        <img src="images/research2.png" alt="Research 2" class="research-img" />
+      </div>
+    </a>
+
+    <a href="in/research3.html" class="research-block-link">
+      <div class="research-block">
+        <div class="research-title-bar">Title</div>
+        <img src="images/research3.png" alt="Research 3" class="research-img" />
+      </div>
+    </a>
+
+    <a href="in/research4.html" class="research-block-link">
+      <div class="research-block">
+        <div class="research-title-bar">Title</div>
+        <img src="images/research4.png" alt="Research 4" class="research-img" />
+      </div>
+    </a>
+  </section>
+    <img src="images/mascot.png" alt="mascot" class="research-mascot" />
+  </div>
+
+
+  
+  <!-- 푸터 -->
+  <div class="footer">
+    THIS PAGE DOESN’T HAVE ANY COMMERCIAL PURPOSE, JUST PERSONALPORTFOLIOS.<br />
+    ©2023, JURAN KIM, ALL RIGHT RESERVED
+  </div>
+</body>
+</html>
